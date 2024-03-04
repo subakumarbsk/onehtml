@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(26, 169, 209);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li{
+    padding-right: 20px;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(64, 236, 90);
+    text-transform: capitalize;
+    width: 100px;
+    height: 150px;
+}
+nav li:hover a{
+    color: #7f00ff;
+    border-radius: 20px;
+}
+.links-logo a{
+    font-size: 20px;
+    padding: 5px;
+}
+.fa-github{
+    color: rgb(1, 1, 1);
+}
+.fa-youtube{
+    color: red;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-linkedin{
+    color: #2f00ff;
+}
+.links-logo a:hover{
+    font-size: 40px;
+}
+/* FORM */
+.contact-heading{
+    text-align: left;
+    padding-left: 30%;
+    margin-top: 5px;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(250, 32, 250);
+}
+.contact-heading::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 10px;
+    top: 15%;
+    left: 30%;
+    border-top-right-radius: 30px;
+    background: linear-gradient(rgb(233, 36, 210),rgb(243, 29, 189),rgb(240, 11, 195));
+    z-index: 0;
+    animation: contact1 1.5s linear infinite;
+}
+.contact-heading::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 10px;
+    top: 15%;
+    left: 30%;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(rgb(233, 36, 210),rgb(243, 29, 189),rgb(240, 11, 195));
+    z-index: 0;
+    animation: contact2 1.5s linear infinite;
+}
+@keyframes contact1 {
+    100%{
+        left: 100%;
+    }
+}
+@keyframes contact2 {
+    100%{
+        left: 0%;
+    }
+}
+.form-container{
+    text-align: center;
+}
+form{
+    padding: 10px;
+    z-index: 100;
+}
+form input, textarea{
+    border-radius: 20px;
+    border-width: 3px;
+    z-index: 5;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 60px;
+}
+form textarea{
+    height: 100px;
+}
+.contact-btn{
+    width: 10%;
+    height: 50px;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: red;
+    color: rgb(33, 107, 227);
+    border-radius: 30px;
+}
+.contact-btn:hover{
+    background-color: orange;
+    color: #1cdf46;
+}
+.links-logo-lg{
+    margin-left: 40%;
+}
+.links-logo-lg a{
+    font-size: 60px;
+    width: 100%;
+    padding: 30px;
+}
+.fa-envelope{
+    color: red;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-linkedin{
+    color: #2f00ff;
+}
+.links-logo a:hover{
+    font-size: 100px;
+}
